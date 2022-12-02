@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DoNote</string>
+    <string name="nav_ghichu">Ghi chú</string>
+    <string name="nav_loinhac">Lời nhắc</string>
+    <string name="nav_nhan">Nhãn</string>
+    <string name="nav_taonhan">Tạo nhãn mới</string>
+    <string name="nav_ungdung">Ứng dụng</string>
+    <string name="nav_caidat">Cài đặt</string>
+    <string name="nav_vechungtoi">Ứng dụng</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

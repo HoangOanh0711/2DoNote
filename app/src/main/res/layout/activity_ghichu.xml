@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ghichu"
+    android:id="@+id/layout_ghichu"
+    android:background="@color/nhat1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="28dp"
+                android:id="@+id/image_back"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/ic_arrow_back"
+                app:tint="@color/dam3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:id="@+id/image_add_alert"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/ic_add_alert"
+                app:layout_constraintBottom_toBottomOf="@+id/image_back"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/image_back"
+                app:tint="@color/dam3" />
+
+            <ImageView
+                android:id="@+id/image_pin"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_pin"
+                app:layout_constraintBottom_toBottomOf="@+id/image_back"
+                app:layout_constraintEnd_toStartOf="@+id/image_add_alert"
+                app:layout_constraintTop_toTopOf="@+id/image_back"
+                app:layout_constraintVertical_bias="0.666"
+                app:tint="@color/dam3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"
+            android:clipToPadding="false"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="15dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true">
+
+                <EditText
+                    android:id="@+id/input_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:background="@null"
+                    android:fontFamily="@font/roboto_bold"
+                    android:hint="Tiêu đề"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="no"
+                    android:includeFontPadding="false"
+                    android:inputType="text|textMultiLine"
+                    android:maxLines="2"
+                    android:textColor="@color/dam4"
+                    android:textColorHint="@color/dam4"
+                    android:textSize="23sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_datetime"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="10sp"
+                    android:textColor="@color/dam4"
+                    android:layout_marginTop="2dp"
+                    app:layout_constraintEnd_toEndOf="@id/input_title"
+                    app:layout_constraintStart_toStartOf="@id/input_title"
+                    app:layout_constraintTop_toBottomOf="@id/input_title"/>
+
+                <EditText
+                    android:id="@+id/input_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:fontFamily="@font/roboto_regular"
+                    android:hint="Ghi chú"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="no"
+                    android:includeFontPadding="false"
+                    android:inputType="text|textMultiLine"
+                    android:textColor="@color/dam4"
+                    android:textColorHint="@color/dam4"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_datetime" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
